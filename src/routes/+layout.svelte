@@ -9,7 +9,7 @@
 	import src from '$lib/assets/logo.svg';
 </script>
 <!-- App Shell -->
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell slotSidebarLeft="bg-surface-500/5 w-1/6 p-4">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
@@ -35,8 +35,8 @@
 		<!-- Insert the list: -->
 			<nav class="list-nav">
 				<ul>
-					<li><a class="btn variant-filled-primary" href="/">Home</a></li>
-					<li><a class="btn variant-filled-primary" href="/about">About</a></li>
+					<li><a class="btn variant-filled-primary p-1 hover:scale-105" href="/">Home</a></li>
+					<li><a class="btn variant-filled-primary p-1 hover:scale-105" href="/about">About</a></li>
 				</ul>
 			</nav>
 		<!-- --- -->
