@@ -6,6 +6,7 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar, LightSwitch } from '@skeletonlabs/skeleton';
+	import src from '$lib/assets/logo.svg';
 </script>
 <!-- App Shell -->
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
@@ -13,10 +14,12 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
+				<img {src} alt="heyhey" class="max-h-8 max-w-8">
 				<strong class="text-xl uppercase">Med-Hub</strong>
-				<!-- <img src=logo alt="heyhey"> -->
+
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<LightSwitch/>
 				<a
 					class="btn btn-sm variant-ghost-surface"
 					href="https://github.com/PedroTurik/SkeletonApp"
